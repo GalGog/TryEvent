@@ -1,0 +1,10 @@
+
+.DS_Store
+.idea/
+README.md
+build/
+node_modules/
+package-lock.json
+package.json
+public/
+yarn.lock
