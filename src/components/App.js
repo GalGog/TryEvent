@@ -7,6 +7,7 @@ import Greeting from './Greeting';
 import LoginControl from './LoginControl';
 import Table from './Table';
 import Form from "./Form";
+import Page from "./WarningBanner";
 
 
 class App extends Component {
@@ -52,6 +53,8 @@ class App extends Component {
                            removeCharacter={this.removeCharacter}
                     />
                     <Form handleSubmit={this.handleSubmit}/>
+                    <hr/>
+                    <Page/>
                 </div>
             </div>
         )
