@@ -8,6 +8,7 @@ import LoginControl from './LoginControl';
 import Table from './Table';
 import Form from "./Form";
 import Page from "./WarningBanner";
+import Toggle from "./Toggle";
 
 
 class App extends Component {
@@ -55,6 +56,8 @@ class App extends Component {
                     <Form handleSubmit={this.handleSubmit}/>
                     <hr/>
                     <Page/>
+                    <hr/>
+                    <Toggle/>
                 </div>
             </div>
         )
