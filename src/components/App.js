@@ -10,6 +10,7 @@ import Form from "./Form";
 import Page from "./WarningBanner";
 import Toggle from "./Toggle";
 import NumberList from "./ListItem";
+import Blog from "./Blog";
 
 
 class App extends Component {
@@ -35,7 +36,14 @@ class App extends Component {
 
     render() {
         const {characters} = this.state;
+
         const numbers = [1, 2, 3, 4, 5];
+
+        const posts = [
+            {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+            {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+        ];
+
 
         return (
             <div className="App">
@@ -62,6 +70,8 @@ class App extends Component {
                     <Toggle/>
                     <hr/>
                     <NumberList numbers={numbers}/>
+                    <hr/>
+                    <Blog posts={posts}/>
                 </div>
             </div>
         )
