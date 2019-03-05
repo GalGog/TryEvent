@@ -9,6 +9,7 @@ import Table from './Table';
 import Form from "./Form";
 import Page from "./WarningBanner";
 import Toggle from "./Toggle";
+import NumberList from "./ListItem";
 
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
 
     render() {
         const {characters} = this.state;
+        const numbers = [1, 2, 3, 4, 5];
 
         return (
             <div className="App">
@@ -58,6 +60,8 @@ class App extends Component {
                     <Page/>
                     <hr/>
                     <Toggle/>
+                    <hr/>
+                    <NumberList numbers={numbers}/>
                 </div>
             </div>
         )
